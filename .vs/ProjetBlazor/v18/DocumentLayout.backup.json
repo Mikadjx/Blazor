@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|d:\\cesi\\formation\\cesi_2025-26\\projet\\blazor\\projetblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|solutionrelative:projetblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|d:\\cesi\\formation\\cesi_2025-26\\projet\\blazor\\projetblazor\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|solutionrelative:projetblazor\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|d:\\cesi\\formation\\cesi_2025-26\\projet\\blazor\\projetblazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|solutionrelative:projetblazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|d:\\cesi\\formation\\cesi_2025-26\\projet\\blazor\\projetblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|solutionrelative:projetblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F3C8E24-512E-4A61-9DEB-DCD3C23611A8}|ProjetBlazor\\ProjetBlazor.csproj|d:\\cesi\\formation\\cesi_2025-26\\projet\\blazor\\projetblazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\Models\\Product.cs",
               "RelativeDocumentMoniker": "ProjetBlazor\\Models\\Product.cs",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ProjetBlazor\\Controllers\\HomeController.cs",
@@ -103,19 +103,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\Program.cs",
               "RelativeDocumentMoniker": "ProjetBlazor\\Program.cs",
               "ToolTip": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\Program.cs",
               "RelativeToolTip": "ProjetBlazor\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T20:14:34.275Z"
+              "WhenOpened": "2026-03-17T20:14:34.275Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ProjetBlazor\\Data\\AppDbContext.cs",
@@ -123,8 +124,7 @@
               "RelativeToolTip": "ProjetBlazor\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T20:13:38.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T20:13:38.95Z"
             },
             {
               "$type": "Document",
@@ -140,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\appsettings.json",
               "RelativeDocumentMoniker": "ProjetBlazor\\appsettings.json",
