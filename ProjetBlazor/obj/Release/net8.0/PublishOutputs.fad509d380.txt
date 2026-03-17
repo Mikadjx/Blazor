@@ -1,0 +1,7 @@
+W:\Blazor_Project\ProjetBlazor.exe
+W:\Blazor_Project\appsettings.Development.json
+W:\Blazor_Project\appsettings.json
+W:\Blazor_Project\ProjetBlazor.dll
+W:\Blazor_Project\ProjetBlazor.deps.json
+W:\Blazor_Project\ProjetBlazor.runtimeconfig.json
+W:\Blazor_Project\ProjetBlazor.pdb
