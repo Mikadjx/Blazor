@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using AspNetPME.Data;
+using ProjetBlazor.Data;        // ← ProjetBlazor pas AspNetPME
 
-namespace AspNetPME.Controllers;
+namespace ProjetBlazor.Controllers;
 
 public class HomeController : Controller
 {
