@@ -11,49 +11,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjetBlazor
 build_property.RootNamespace = ProjetBlazor
-build_property.ProjectDir = D:\CESI\Formation\CESI_2025-26\Projet\Blazor2\ProjetBlazor\
+build_property.ProjectDir = D:\CESI\Formation\CESI_2025-26\Projet\Blazor\ProjetBlazor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\CESI\Formation\CESI_2025-26\Projet\Blazor2\ProjetBlazor
+build_property.MSBuildProjectDirectory = D:\CESI\Formation\CESI_2025-26\Projet\Blazor\ProjetBlazor
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/App.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Pages/Counter.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Pages/Error.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Pages/Home.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Pages/Weather.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Routes.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/_Imports.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Layout/MainLayout.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-4bsscjzskn
 
-[D:/CESI/Formation/CESI_2025-26/Projet/Blazor2/ProjetBlazor/Components/Layout/NavMenu.razor]
+[D:/CESI/Formation/CESI_2025-26/Projet/Blazor/ProjetBlazor/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-g76asifnmp

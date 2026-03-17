@@ -1,7 +1,246 @@
 ﻿@page "/"
+@using ProjetBlazor.Models
+@using ProjetBlazor.Data
+@inject AppDbContext Db
+@rendermode InteractiveServer
 
-<PageTitle>Home</PageTitle>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-<h1>Hello, world!</h1>
+<style>
+    :root {
+        --blood: #8b0000;
+        --crimson: #cc0000;
+        --dark: #0a0a0a;
+        --surface: #111111;
+        --card-bg: #161616;
+        --border: #2a2a2a;
+        --text: #e8e0d5;
+        --muted: #7a7060;
+    }
 
-Welcome to your new app.
+    body {
+        background: var(--dark);
+        color: var(--text);
+        font-family: 'Crimson Text',Georgia,serif;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        background: radial-gradient(ellipse 80% 60% at 50% 40%,rgba(139,0,0,0.2) 0%,transparent 70%),#0a0a0a;
+    }
+
+        .hero h1 {
+            font-family: 'Cinzel Decorative',serif;
+            font-size: clamp(2rem,6vw,4rem);
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 40px rgba(200,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+            .hero h1 span {
+                color: var(--crimson);
+            }
+
+    .hero-sub {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: var(--muted);
+        max-width: 520px;
+        margin: 0 auto 2.5rem;
+    }
+
+    .btn-primary {
+        background: var(--blood);
+        color: #fff;
+        padding: 0.75rem 2rem;
+        border-radius: 2px;
+        font-family: 'Cinzel Decorative',serif;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        border: 1px solid var(--crimson);
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .section-label {
+        font-family: 'Cinzel Decorative',serif;
+        font-size: 0.6rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--crimson);
+        display: block;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .section-title {
+        font-family: 'Cinzel Decorative',serif;
+        font-size: clamp(1.5rem,3.5vw,2.4rem);
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .section-desc {
+        font-size: 1.1rem;
+        font-style: italic;
+        color: var(--muted);
+        text-align: center;
+        max-width: 540px;
+        margin: 0 auto 3.5rem;
+    }
+
+    .featured-section {
+        background: var(--surface);
+        padding: 5rem 2rem;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto 2.5rem;
+    }
+
+    .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 1.5rem;
+        transition: transform 0.3s,border-color 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--blood);
+        }
+
+    .card-category {
+        font-family: 'Cinzel Decorative',serif;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        color: var(--crimson);
+        letter-spacing: 3px;
+        margin-bottom: 0.6rem;
+    }
+
+    .card-title {
+        font-family: 'Cinzel Decorative',serif;
+        font-size: 0.95rem;
+        color: #fff;
+        margin-bottom: 0.6rem;
+    }
+
+    .card-desc {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: var(--muted);
+        margin-bottom: 1.2rem;
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--border);
+        padding-top: 1rem;
+    }
+
+    .card-price {
+        font-family: 'Cinzel Decorative',serif;
+        font-size: 1.1rem;
+        color: var(--crimson);
+    }
+
+    .stock-ok {
+        color: #4caf50;
+    }
+
+    .stock-low {
+        color: #ff9800;
+    }
+
+    .stock-empty {
+        color: #f44336;
+    }
+
+    .footer {
+        background: #080808;
+        border-top: 2px solid var(--blood);
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-family: 'Cinzel Decorative',serif;
+        color: var(--crimson);
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-cities {
+        font-size: 0.85rem;
+        font-style: italic;
+        color: var(--muted);
+    }
+
+    .footer-copy {
+        font-size: 0.75rem;
+        color: #444;
+        margin-top: 0.5rem;
+    }
+</style>
+
+<section class="hero">
+    <div>
+        <h1>La Petite Maison<br>de <span>l'Épouvante</span></h1>
+        <p class="hero-sub">Le lieu de rêve pour frissonner. Figurines, Blu-ray collector, fanzines spécialisés et jeux de plateau.</p>
+        <a href="#catalogue" class="btn-primary">Découvrir le catalogue</a>
+    </div>
+</section>
+
+@if (products.Any())
+{
+    <section class="featured-section" id="catalogue">
+        <span class="section-label">Sélection</span>
+        <h2 class="section-title">Nos produits phares</h2>
+        <p class="section-desc">Une sélection de nos articles les plus appréciés.</p>
+        <div class="products-grid">
+            @foreach (var product in products)
+            {
+                <div class="card">
+                    <div class="card-category">@product.Category</div>
+                    <h3 class="card-title">@product.Name</h3>
+                    <p class="card-desc">@product.Description</p>
+                    <div class="card-footer">
+                        <span class="card-price">@product.Price €</span>
+                        <span class="@(product.Stock > 10 ? "stock-ok" : product.Stock > 0 ? "stock-low" : "stock-empty")">
+                            @(product.Stock > 0 ? $"En stock ({product.Stock})" : "Rupture")
+                        </span>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<footer class="footer">
+    <div class="footer-brand">💀 La Petite Maison de l'Épouvante</div>
+    <div class="footer-cities">Angoulême · Aix-en-Provence · Lyon · Londres</div>
+    <div class="footer-copy">© 2026 — Tous droits réservés</div>
+</footer>
+
+@code {
+    private List<Product> products = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Task.Run(() => Db.Products.ToList());
+    }
+}
