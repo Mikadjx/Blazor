@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\ProjetBlazor.csproj",
+      "projectUniqueName": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor2\\ProjetBlazor\\ProjetBlazor.csproj",
       "projectName": "ProjetBlazor",
-      "projectPath": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\ProjetBlazor.csproj",
+      "projectPath": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor2\\ProjetBlazor\\ProjetBlazor.csproj",
       "packagesPath": "C:\\Users\\chezd\\.nuget\\packages\\",
-      "outputPath": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor\\ProjetBlazor\\obj\\",
+      "outputPath": "D:\\CESI\\Formation\\CESI_2025-26\\Projet\\Blazor2\\ProjetBlazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
